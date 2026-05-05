@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "213821201759",
+    "project_id": "laptoparthesis",
+    "storage_bucket": "laptoparthesis.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213821201759:android:e6c10340113c3ffcd4eaea",
+        "android_client_info": {
+          "package_name": "com.example.laptoparthesis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJeglJccO2HrBq5fzcYD2XR__1RC3Mxs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
