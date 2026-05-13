@@ -1,6 +1,5 @@
 package com.example.laptoparthesis.di
 
-import com.example.laptoparthesis.data.api.TechSpecsService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -39,7 +38,7 @@ object NetworkModule {
     @Singleton
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://api.techspecs.io/v5/") // Updated to v5
+            .baseUrl("https://api.bestbuy.com/")
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
@@ -47,7 +46,7 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideTechSpecsService(retrofit: Retrofit): TechSpecsService {
-        return retrofit.create(TechSpecsService::class.java)
+    fun provideBestBuyService(retrofit: Retrofit): com.example.laptoparthesis.data.api.BestBuyService {
+        return retrofit.create(com.example.laptoparthesis.data.api.BestBuyService::class.java)
     }
 }

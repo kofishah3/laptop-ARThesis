@@ -6,7 +6,8 @@ data class LaptopModel(
     val brand: String,
     val specs: Map<String, String>,
     val description: String,
-    val category: String
+    val category: String,
+    val barcode: String? = null
 )
 
 data class HardwareComponent(
@@ -31,7 +32,8 @@ object MockData {
                 "GPU" to "NVIDIA RTX 4050 6GB",
                 "Storage" to "512GB NVMe SSD",
                 "Display" to "15.6\" OLED 3.5K"
-            )
+            ),
+            barcode = "123456789012"
         ),
         LaptopModel(
             id = "mbp-14-m3",
@@ -45,7 +47,8 @@ object MockData {
                 "GPU" to "14-core Apple GPU",
                 "Storage" to "512GB SSD",
                 "Display" to "14.2\" Liquid Retina XDR"
-            )
+            ),
+            barcode = "987654321098"
         ),
         LaptopModel(
             id = "rog-zephyrus-g14",
@@ -59,7 +62,8 @@ object MockData {
                 "GPU" to "NVIDIA RTX 4070 8GB",
                 "Storage" to "1TB NVMe SSD",
                 "Display" to "14\" QHD+ 165Hz"
-            )
+            ),
+            barcode = "456789012345"
         )
     )
 

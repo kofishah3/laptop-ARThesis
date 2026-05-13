@@ -106,4 +106,15 @@ dependencies {
     // JSON & Logging
     implementation(libs.gson)
     implementation(libs.timber)
+
+    // CameraX & ML Kit
+    implementation(libs.androidx.camera.core)
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.view)
+    implementation(libs.mlkit.barcode.scanning)
+
+    // AR
+    implementation(libs.ar.core)
+    implementation(libs.ar.sceneview)
 }

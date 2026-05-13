@@ -22,7 +22,7 @@ import com.example.laptoparthesis.ui.theme.LaptopARThesisTheme
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(onScanClick: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -55,7 +55,7 @@ fun HomeScreen() {
                 shadowElevation = 8.dp
             ) {
                 IconButton(
-                    onClick = { /* No functionality yet */ },
+                    onClick = onScanClick,
                     modifier = Modifier.fillMaxSize()
                 ) {
                     Icon(
@@ -121,6 +121,6 @@ fun HomeScreen() {
 @Composable
 fun HomeScreenPreview() {
     LaptopARThesisTheme {
-        HomeScreen()
+        HomeScreen(onScanClick = {})
     }
 }

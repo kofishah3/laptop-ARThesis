@@ -2,11 +2,6 @@ package com.example.laptoparthesis.data.api
 
 import com.google.gson.annotations.SerializedName
 
-data class TechSpecsResponse<T>(
-    val status: String,
-    val data: T
-)
-
 data class ProductSearchItem(
     @SerializedName("Product") val product: ProductInfo? = null,
     @SerializedName("Release Date") val releaseDate: String? = null
